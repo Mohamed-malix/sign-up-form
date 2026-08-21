@@ -62,6 +62,13 @@ input:user-invalid + span i{
   visibility: visible;
 }
 
+input:focus{
+  box-shadow: 6px 5px 10px rgba(3, 88, 173, 0.4);
+}
+
+
+
+
 
 
 
@@ -124,24 +131,27 @@ input:user-invalid + span i{
 
 /* The form section */
 
-.form{
+
+.form-back{
+  background-color: #fff;
   height:100%;
   width:50%;
 
-  padding:45px;
-  padding-right:250px;
+}
 
+
+.form{
+  height:100%;
   display:flex;
   flex-direction:column;
   justify-content:center;
+
 }
 
 
 
 .form-line{
   display:flex;
-  justify-content:space-between;
-
   margin-block:25px;
 }
 
@@ -157,10 +167,31 @@ h1{
 
 
 
-.white-bg{
-  margin-bottom: 35px;
+
+
+.form-title{
+  padding:35px;
+  padding-bottom:28px;
 }
 
+
+form{
+  margin-top: 05px;
+
+  width:100%;
+  padding:5px 10px 10px 35px;
+}
+
+.white-bg{
+  margin-bottom: 38px;
+  width:100%;
+
+}
+
+
+.first-line{
+  margin-right: 120px;
+}
 
 .submit{
   background-color: rgb(128, 38, 211);
