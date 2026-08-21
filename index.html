@@ -4,8 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/all.min.css"> 
 </head>
+
 <body>
     
+    <div class="continer">
+        <div class="image-back">
+            <div class="image-content">
+                <i class="fa-brands fa-pix logo"></i>
+
+                <p class="logo-p">Purple sky</p>
+            </div>
+        </div>
+
+     <div class="form">
+
+            <h1>To Sign-up:</h1>
+            <h3 class="">Please complete all the required (*) fields.</h3>
+
+         <form action="#">
+
+            <div class="white-bg">
+
+                    <div class="form-line">
+                        <div class="">
+                            <label for="f-name">* FIRST NAME: </label>
+                            <input type="text" name="f-name" id="f-name"
+                             placeholder="Mohamed" required>
+                            <span></span>
+
+                        </div>
+                        <div class="">
+                            <label for="f-name">* lAST NAME: </label>
+                            <input type="text" name="L-name" id="L-name"
+                             placeholder="Ali" required>
+                             <span></span>
+
+                        </div>
+                    </div>
+
+                    <div class="form-line">
+                        <div class="">
+                            <label for="email">* EMAIL:</label>
+                            <input type="email" name="email" id="email " placeholder="Emali@example.com" required>
+                            <span></span>
+
+                        </div>
+                        <div class="">
+                            <label for="f-name">* PHONE NUMBER:</label>
+                            <input type="tel" name="tel" id="tel" placeholder="122-122-1222" required>
+                            <span></span>
+
+                        </div>
+                    </div>
+
+                    <div class="form-line password-line">
+                        <div class="">
+                            <label for="passwd">* PASSWORD:</label>
+                            <input type="password" name="passwd" id="passwd" 
+                            pattern=".{8,}" title="Eight or more characters" required>
+                            <span></span>
+
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <label for="comfirm">* COMFIRM PASSWORD:</label>
+                                <input type="pass" name="comfirm" id="comfirm" 
+                                 pattern=".{8,}" title="Eight or more characters" required>
+                                <span></span>
+
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+
+            <button class="submit"> Create Account</button>
+            <p class="">Aready have an account?
+             <a href="#" target="_blank" rel="noopener noreferrer">Log in</a></p>
+
+         </form>
+      </div>
+    </div>
+
 </body>
 </html>
