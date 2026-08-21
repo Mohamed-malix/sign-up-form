@@ -5,6 +5,10 @@
   box-sizing:border-box;
 }
 
+html,body{
+  overflow:hidden;
+}
+
 .roboto{
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -20,9 +24,9 @@ input{
   width:250px;
   height:28px;
   margin-top:2px;
+  padding-left:6px;
 
   border:1px solid black;
-  position:relative;
 }
 
 label{
@@ -44,26 +48,18 @@ input:user-valid:required{
 }
 
 
-input:user-valid +span::before{
-  content:"✔";
-  color:rgb(3, 165, 3);
-  font-size: 18px;
 
-  position:absolute;
-  top:5px;
-  right:-20px;
+input:required + span  i{
+  visibility: hidden;
 }
 
 
-input:user-invalid +span::before{
-  content:"✖";
+
+input:user-invalid + span i{
   color:red;
   font-size: 18px;
 
-  position:absolute;
-  top:-1.7em;
-  right:-3em;
-
+  visibility: visible;
 }
 
 
