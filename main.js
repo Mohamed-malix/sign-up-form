@@ -1,30 +1,18 @@
 
-document.querySelector('.submit').addEventListener('click', (e) => {
-    e.preventDefault();
-    addElements();
-})
 
-
-function addElements(){
-
+function submitForm(){
     let passwd = document.querySelector('#passwd');
     let passcom= document.querySelector('#comfirm');
 
-    checkPasswd(passwd, passcom);
-}
+     if(passwd.value!==passcom.value){
 
-
-function checkPasswd(passwd, passcom){
-
-    console.log(passcom.value);
-    console.log(passwd.value);
-
-    if(passwd.value!==passcom.value){
-    alert('The password and comfirm password must be the same');
+         alert('The password and comfirm password must be the same');
+         return false;
     }
     else{
         alert('The registration was successful!');
+        
+        return true;
     }
 
 }
-
